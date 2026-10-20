@@ -1,0 +1,25 @@
+{
+  "$schema": "https://living-code.dev/port.schema.json",
+  "schemaVersion": 1,
+  "name": "JSON / JavaScript",
+  "slug": "json",
+  "group": "Web & code",
+  "emoji": "🧾",
+  "description": "Living Code for JSON / JavaScript. Repository-owned theme files, installation instructions and four color flavors.",
+  "homepage": "https://github.com/living-code-theme/palette",
+  "quick": "Install @living-code/palette",
+  "aliases": [
+    "palette"
+  ],
+  "flavors": [
+    "night",
+    "frost",
+    "paper",
+    "signal"
+  ],
+  "files": [
+    "palette.json",
+    "palette.mjs"
+  ],
+  "images": []
+}

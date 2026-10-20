@@ -1,0 +1,35 @@
+{
+  "name": "@living-code/palette",
+  "version": "0.1.1",
+  "description": "Living Code for JSON / JavaScript. Repository-owned theme files, installation instructions and four color flavors.",
+  "type": "module",
+  "license": "MIT",
+  "author": "Living Code",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/living-code-theme/palette.git"
+  },
+  "homepage": "https://github.com/living-code-theme/palette",
+  "publishConfig": {
+    "access": "public"
+  },
+  "files": [
+    "palette.json",
+    "palette.mjs"
+  ],
+  "exports": {
+    "./palette.json": "./palette.json",
+    "./palette.mjs": "./palette.mjs",
+    ".": "./palette.mjs"
+  },
+  "main": "./palette.mjs",
+  "packageManager": "pnpm@12.9.0",
+  "livingCode": {
+    "kind": "npm"
+  },
+  "scripts": {
+    "check": "node scripts/check.mjs",
+    "test": "node scripts/check.mjs",
+    "package": "node scripts/package.mjs"
+  }
+}
