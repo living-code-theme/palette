@@ -1,0 +1,5 @@
+{
+  "schemaVersion": 1,
+  "artifacts": ["living-code-palette-{version}.tgz"],
+  "channels": [{ "name": "npm", "url": "https://www.npmjs.com/package/@living-code/palette", "instructions": "Verify ownership of the living-code npm organization, package name/version and token or trusted-publisher access. Publish the reviewed tarball with npm publish <tgz> --access public --ignore-scripts, or use this port's manual publish-npm workflow. Packaging never publishes." }]
+}
