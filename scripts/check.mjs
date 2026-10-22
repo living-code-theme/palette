@@ -57,7 +57,7 @@ export async function check(directory = root) {
     if (/^# /.test(line)) titles.push(line);
   }
   assert.equal(titles.length, 1);
-  assert.deepEqual(sections, headings);
+  assert.deepEqual(sections, manifest.images.length ? headings : headings.filter((section) => section !== "Previews"));
   assert.deepEqual([...readme.matchAll(/<details\s+data-lc-flavor="([a-z]+)"/g)].map((match) => match[1]), order.filter((id) => manifest.flavors.includes(id)));
   for (const image of manifest.images) assert.ok(readme.split(`src="${image.path}"`).length >= 3, `README must include comparison and flavor capture: ${image.path}`);
   if (pkg.contributes?.themes) {

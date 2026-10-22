@@ -5,10 +5,6 @@
 
 [Installation](#installation) · [Flavors](#flavors) · [Configuration](#configuration) · [All ports](https://github.com/living-code-theme)
 
-## Previews
-
-Real application screenshots have not been captured yet.
-
 ## Installation
 
 ```sh
@@ -25,12 +21,10 @@ Or read `palette.json` from any language.
 
 ## Flavors
 
-Expand a flavor for its full-size preview and activation instructions.
+Expand a flavor for its activation instructions.
 
 <details data-lc-flavor="night">
 <summary><strong>Night</strong> · Dark · full palette</summary>
-
-A real application capture is not available yet.
 
 ```js
 import { palette } from "@living-code/palette";
@@ -42,8 +36,6 @@ palette.night.colors.teal.hex;
 <details data-lc-flavor="frost">
 <summary><strong>Frost</strong> · Dark · softer chroma</summary>
 
-A real application capture is not available yet.
-
 ```js
 import { palette } from "@living-code/palette";
 palette.frost.colors.teal.hex;
@@ -54,8 +46,6 @@ palette.frost.colors.teal.hex;
 <details data-lc-flavor="paper">
 <summary><strong>Paper</strong> · Light · near-white slate</summary>
 
-A real application capture is not available yet.
-
 ```js
 import { palette } from "@living-code/palette";
 palette.paper.colors.teal.hex;
@@ -65,8 +55,6 @@ palette.paper.colors.teal.hex;
 
 <details data-lc-flavor="signal">
 <summary><strong>Signal</strong> · Dark · teal accent</summary>
-
-A real application capture is not available yet.
 
 ```js
 import { palette } from "@living-code/palette";
