@@ -1,4 +1,4 @@
-# Manual only. Keep the existing @living-code package name and configure NPM_TOKEN here.
+# Manual only. Publish through the npm trusted publisher (OIDC); no npm token is required.
 name: publish-npm
 on:
   workflow_dispatch:
@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: read
-      id-token: write # npm provenance attestation; also enables npm trusted publishing (OIDC)
+      id-token: write # Required for npm trusted publishing (OIDC) and provenance.
     steps:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
@@ -20,5 +20,3 @@ jobs:
           registry-url: https://registry.npmjs.org
       - run: node scripts/check.mjs
       - run: npm publish --access public --ignore-scripts --provenance
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
